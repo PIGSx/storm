@@ -5,6 +5,12 @@
     --pink: #f04393;
     --pink2: #f9004d;
 }
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
 
 body {
     margin: 0px;
