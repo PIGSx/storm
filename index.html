@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>storm</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,8 +23,8 @@
             </div>
             <ul class="nav-list">
                 <li><a href="index.html">inicio</a></li>
-                <li><a href="#">historia</a></li>
-                <li><a href="#">quem somos</a></li>
+                <li><a href="#QS">quem somos</a></li>
+                <li><a href="#service">serviços</a></li>
                 <li class="log"><a href="">login</a></li> 
             </ul>
             <ul class="nav-login">
@@ -34,15 +35,34 @@
         <!-- apresentação -->
         <div class="content">
             <h1><span>storm</span></h1>
-            <h3>impactantes como um raio.. katiau</h3>
+            <h3>rápido  como um raio.. KATIAU</h3>
             <br><br>
             <p style="text-align: center;">
                 <a class="button" href="#">nossa história</a>
            </p>
         </div>
         <main></main>
+        <!-- galeria da logo -->
+        <div class="gallery">
+             <div class="g-item">
+                     <h1 class="g-tittle"></h1>
+                    <img src="img/logos/s-branco.png" alt="" class="galleryImg">
+            </div>
+            <div class="g-item">
+               <img src="img/logos/branco-roxo.png" alt="" class="galleryImg">
+               <h1 class="g-tittle">o <span>detalhe</span> que falta no seu sistema.</h1>
+       </div>
+       <div class="g-item">
+        <h1 class="g-tittle"></h1>
+       <img src="img/logos/s-roxo.png" alt="" class="galleryImg">
+</div>
+        </div>
+        <!-- humanos do projeto -->
+        <div class="line">
+            <h1  id="QS">Quem somos</h1>
+        </div>
         <!-- serviços -->
-        <div class="service">
+        <div class="service" id="service">
             <div class="title">
                 <h2>Nossos Serviços</h2>
             </div>
@@ -53,7 +73,7 @@
                     <div class="txt">
                         <p>adicionar texto</p>
                         <p style="text-align: center;">
-                            <a class="button" href="#">saiba mais</a>
+                            <a class="button" href="bru.html">saiba mais</a>
                         </p>
                     </div>
                 </div>
@@ -79,11 +99,13 @@
                 </div>
             </div>
         </div>
+
     <!-- rodapé -->
     <footer>
 		<p>titulo</p>
 		<p>adicionar texto</p>
 		<p class="copy">Copyright © By STORM</p>
 	</footer>
+    <script src="js/scroll.js"></script>
 </body>
 </html>
