@@ -1,0 +1,80 @@
+.padd-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 15%;
+    position: relative;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    color: aliceblue;
+}
+
+.home .home-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+h3.name {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h3.funcao {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.home-info p {
+    margin-bottom: 70px;
+    font-size: 20px;
+}
+
+.home .home-img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.home-img::after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid rebeccapurple;
+    border-right: 10px solid rebeccapurple;
+    right: 20px;
+    bottom: -40px;
+}
+
+.home-img::before {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid rebeccapurple;
+    border-left: 10px solid rebeccapurple;
+    left: 20px;
+    top: -40px;
+}
+
+.home .home-img img {
+    margin: auto;
+    border-radius: 5px;
+    height: 300px;
+}
