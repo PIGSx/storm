@@ -17,7 +17,10 @@ body{
 	transform: translateY(-50%);
 }
 span{
-	color: var(--pink2);
+	color: var(--white);
+}
+span2{
+	color: var(--wine)
 }
 h1{
 	color: var(--white);
@@ -29,7 +32,7 @@ h3{
 	font-size: 20px;
 }
 .content .button{
-	background-color: var(--wine);
+	background-color: var(--purple);
 	color: var(--white);
 	text-decoration: none;
 	border: 2px solid transparent;
@@ -40,19 +43,19 @@ h3{
 }
 .content .button:hover{
 	background-color: transparent;
-	border: 2px solid var(--wine);
+	border: 2px solid var(--purple);
 }
 
 main{
 	height: 70vh; 
-	width: 100%;
-	background-image: url(../img/background.png);
+	width: 90%;
+	background-image: url(../img/png/background.png);
 	background-size: cover;
 	background-position: center;
 }
 /* galeria */
 .gallery{
-	margin-top: 40px;
+	margin-top: 20px;
 	padding: 50px;
 	display: flex;
 }
@@ -66,23 +69,11 @@ main{
 .g-tittle{
 	font-size: 20px;
 }
-/* quem somos */
-.line{
-	width: 98%;
-    height: 60px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    justify-content: space-between;
-    border-bottom: 2px solid #370f53;
-}
-.line h1{
-	font-size: 30px;
-}
+
+
 /* serviços */
 .service{
-	margin-top: 5%;
+	margin-top: 2%;
 	width: 100%;
 	padding: 100px 0px;
 }
@@ -130,7 +121,7 @@ h5{
 	margin-bottom: 25px;
 }
 .card .button{
-	background-color:var(--wine);
+	background-color:var(--purple);
 	color: var(--white);
 	text-decoration: none;
 	border: 2px solid transparent;
@@ -141,7 +132,7 @@ h5{
 }
 .card .button:hover{
 	background-color: transparent;
-	border: 2px solid var(--wine);
+	border: 2px solid var(--purple);
 }
 /* scroll animado */
 
