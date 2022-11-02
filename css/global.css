@@ -20,6 +20,7 @@ body {
     padding: 0px;
     min-height: 100vh;
     overflow-x: hidden;
+    background: #101010;
 }
 /* menu */
 nav {
@@ -81,6 +82,7 @@ footer{
     position: relative;
 	width: 100%;
 	height: 250px;
+    margin-top: 60px;
 	background: #000;
 	display: flex;
 	flex-direction: column;
