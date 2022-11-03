@@ -2,6 +2,9 @@ html{
     font-size: 65%;
     scroll-behavior: smooth;
 }
+.nav-list a{
+    font-size: 16px;
+}
 .about{
     padding: 2rem 7%;
 }
@@ -10,8 +13,7 @@ html{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-    
+    gap: 20px;  
 }
 .about-content{
     flex: 1 1 45rem;
