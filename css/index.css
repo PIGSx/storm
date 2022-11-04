@@ -43,12 +43,11 @@ h3{
 	border: 2px solid var(--purple);
 }
 
-main{
-	height: 70vh; 
-	width: 90%;
-	background-image: url(../img/png/background.png);
-	background-size: cover;
-	background-position: center;
+.fundo img{
+	margin-top: 5%;
+	height: 60%;
+	left: 65%;
+    position: relative;
 }
 /* galeria */
 .gallery{
@@ -133,6 +132,6 @@ h5{
 }
 /* scroll animado */
 
-.content, .gallery, .service{
+.content, .fundo img, .gallery, .service{
 	visibility: hidden;
 }
