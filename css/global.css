@@ -94,6 +94,24 @@ footer p{
 	margin-bottom: 20px;
 	font-weight: bold;
 }
+footer .share{
+    padding:1rem 0;
+}
+
+footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    border:var(--boo);
+    margin:.3rem;
+    border-radius: 50%;
+}
+
+footer .share a:hover{
+    background-color: var(--purple);
+}
 
 .copy{
     position: absolute;
