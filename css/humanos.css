@@ -1,3 +1,10 @@
+:root{
+    --white: #fff;
+    --purple: #370f53;
+    --pink: #f04393;
+    --pink2: #f9004d;
+    --boo: #581258;
+}
 .padd-15 {
     padding-left: 15px;
     padding-right: 15px;
@@ -21,7 +28,7 @@
 .home {
     min-height: 100vh;
     display: flex;
-    color: aliceblue;
+    color:  var(--white);
 }
 
 .home .home-info {
@@ -56,8 +63,8 @@ h3.funcao {
     position: absolute;
     height: 80px;
     width: 80px;
-    border-bottom: 10px solid rebeccapurple;
-    border-right: 10px solid rebeccapurple;
+    border-bottom: 10px solid var(--purple);
+    border-right: 10px solid var(--purple);
     right: 20px;
     bottom: -40px;
 }
@@ -67,8 +74,8 @@ h3.funcao {
     position: absolute;
     height: 80px;
     width: 80px;
-    border-top: 10px solid rebeccapurple;
-    border-left: 10px solid rebeccapurple;
+    border-top: 10px solid var(--purple);
+    border-left: 10px solid var(--purple);
     left: 20px;
     top: -40px;
 }
@@ -77,4 +84,8 @@ h3.funcao {
     margin: auto;
     border-radius: 5px;
     height: 300px;
+}
+/* scroll */
+.row, .home-img{
+    visibility: hidden;
 }
