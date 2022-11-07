@@ -133,3 +133,35 @@ h5{
 .content, .fundo img, .gallery, .service{
 	visibility: hidden;
 }
+@media screen and (max-width: 768px){
+	.content{
+		position: absolute;
+		width: 20%;
+		top: 40%;
+	}
+	.fundo{
+		height: 50%;
+		margin-top: 35%;
+	}
+	h3{
+		font-size: 20px;
+		text-align: center;
+		margin-left: 12px;
+	}
+	.content .button{
+	    padding: 26px 6px;
+		width: 15vh;
+		display: flex;
+		text-align: center;
+		font-size: 18px;
+	}
+	.gallery{
+		padding: 0px;
+	}
+	.galleryImg{
+		width: 20vh;
+	}
+	.title h2{
+		font-size: 28px;
+	}
+}
