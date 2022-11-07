@@ -1,9 +1,12 @@
 :root{
     --white: #fff;
     --purple: #370f53;
+    --wine: #48142c;
     --pink: #f04393;
     --pink2: #f9004d;
-    --boo: #581258;
+}
+span{
+	color: var(--pink2);
 }
 .padd-15 {
     padding-left: 15px;
@@ -48,7 +51,7 @@ h3.funcao {
 
 .home-info p {
     margin-bottom: 70px;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .home .home-img {
