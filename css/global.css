@@ -22,6 +22,7 @@ body {
     overflow-x: hidden;
     background: #101010;
 }
+
 /* menu */
 nav {
     display: flex;
@@ -87,6 +88,7 @@ footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+    align-items: center;
 }
 footer p{
 	font-size: 30px;
@@ -95,27 +97,100 @@ footer p{
 	font-weight: bold;
 }
 footer .share{
-    padding:1rem 0;
+    padding: 2rem 0;
 }
 
 footer .share a{
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    color:#fff;
-    border:var(--boo);
-    margin:.3rem;
-    border-radius: 50%;
+    font-size: 35px;
+    padding: 8px;
+    color: var(--white);
 }
 
 footer .share a:hover{
-    background-color: var(--purple);
+    color: var(--boo);
 }
 
-.copy{
+footer .copy{
     position: absolute;
 	color: var(--purple);
 	bottom: 35px;
 	font-size: 14px;
+    top: 90%;
+}
+
+@media screen and (max-width: 768px) {
+    /* menu-mobile */
+    .nav-list {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        display: flex;
+        width: 50%;
+        height: 92%;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+        z-index: 1000;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .nav-login {
+        display: none;
+    }
+    .log {
+        display: flex;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+    display: flex;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* animação burguer */
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* cor barra de rolagem */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #131313;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #370f53;
+    border-radius: 10px;
 }
