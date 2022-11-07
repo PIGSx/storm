@@ -1,7 +1,7 @@
 const sr = ScrollReveal ({
     distance : '45px',
     duration : 2000,
-    reset : true,
+    reset : false,
   })
 /* pagina inicial */
 sr.reveal('.content', {duration: 1000});
