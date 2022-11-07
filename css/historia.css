@@ -1,9 +1,9 @@
 :root{
     --white: #fff;
     --purple: #370f53;
+    --wine: #48142c;
     --pink: #f04393;
     --pink2: #f9004d;
-    --boo: #581258;
 }
 html{
     font-size: 65%;
