@@ -1,12 +1,12 @@
 :root{
     --white: #fff;
     --purple: #370f53;
+	--roxo: #9f37ea;
     --wine: #48142c;
-    --pink: #f04393;
-    --pink2: #f9004d;
+    --pink: #f9004d;
 }
 span{
-	color: var(--pink2);
+	color: var(--roxo);
 }
 .padd-15 {
     padding-left: 15px;
