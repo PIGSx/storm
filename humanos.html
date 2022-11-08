@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Quem somos</title>
     <link rel="stylesheet" href="css/global.css">
@@ -35,67 +35,97 @@
         </ul>
     </nav>
     <script src="js/menu.js"></script>
-    
-    <!-- funcionarios -->
-    <section class="home">
-        <div class="container">
-            <div class="row">
-                <div class="home-info padd-15">
-                    <h3 class="name">Bruna Maia</h3>
-                    <h3 class="funcao"></h3>
-                    <p> textinho contando a historia..</p>
+    <!-- botao de inicio -->
+    <article>
+        <button class="scrollTop" onclick="backTop();">
+            <img src="img/png/arrow.svg" alt="">
+        </button>
+
+        <!-- funcionarios -->
+        <section class="home">
+            <div class="container">
+                <div class="row">
+                    <div class="home-info padd-15">
+                        <h3 class="name">Bruna Maia</h3>
+                        <h3 class="funcao"></h3>
+                        <p>Administradora geral da <span>storm</span>, Bruna é a nossa desenvolvedora back-end. É ela a
+                            responsável por cuidar da imagem da <span>storm</span> e por liderar as equipes.</p>
+                    </div>
+                    <div class="home-img padd-15">
+                        <img src="img/foto.png" alt="">
+                    </div>
                 </div>
-                <div class="home-img padd-15">
-                    <img src="img/foto.png" alt="">
+                <div class="row">
+                    <div class="home-info padd-15">
+                        <h3 class="name">Hiury Sá</h3>
+                        <h3 class="funcao"></h3>
+                        <p>Conhecido como "pigs", Hiury é o nosso desenvolvedor Full-Stack e CEO da <span>storm</span>.
+                            É ele o responsável por desenvolver os nossos sistemas e por cuidar da manipulação de
+                            imagens (designer).</p>
+                    </div>
+                    <div class="home-img padd-15">
+                        <img src="img/grupo/pigs.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="home-info padd-15">
+                        <h3 class="name">Jennyfer Oliveira</h3>
+                        <h3 class="funcao"></h3>
+                        <p>Responsável por ser a nossa designer geral, Jennyfer também é a gerente da nossa empresa e
+                            gerente de projetos. É ela quem cuida da documetação e organização das equipes.</p>
+                    </div>
+                    <div class="home-img padd-15">
+                        <img src="img/grupo/jenny.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="home-info padd-15">
+                        <h3 class="name">Thiago Pereira</h3>
+                        <h3 class="funcao"></h3>
+                        <p>Thiago é o nosso programador e desenvolvedor front-end, é ele o responsável pela elaboração e
+                            criação de aplicativos. Além disso, ele é um dos nossos contribuidores com a função de
+                            designer da empresa.</p>
+                    </div>
+                    <div class="home-img padd-15">
+                        <img src="img/grupo/thigo.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="home-info padd-15">
-                    <h3 class="name">Hiury Sá</h3>
-                    <h3 class="funcao"></h3>
-                    <p>Conhecido como "pigs", Hiury é o nosso desenvolvedor Full-Stack e CEO da <span>storm</span>. É ele o responsável por desenvolver os nossos sistemas e por cuidar da manipulação de imagens (designer).</p>
-                </div>
-                <div class="home-img padd-15">
-                    <img src="img/grupo/pigs.png" alt="">
-                </div>
+        </section>
+    </article>
+    <!-- script do scroll -->
+    <script>
+        window.addEventListener('scroll', function(){
+            let scroll = document.querySelector('.scrollTop')
+            scroll.classList.toggle('active', window.scrollY > 250)
+        })
+        function backTop(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
+        <br><br>
+        <footer>
+            <p>Redes Sociais</p>
+            <h3 class="siga">siga nossas redes sociais e fique por dentro de tudo que acontece no dia a dia da
+                <span>storm</span>.</h3>
+            <div class="share">
+                <a href="#" target="blank">
+                    <ion-icon class="icons" name="logo-instagram"></ion-icon></a>
+                <a href="https://twitter.com/_StormComp" target="blank">
+                    <ion-icon class="icons" name="logo-twitter"></ion-icon></a>
+                <a href="https://api.whatsapp.com/send?phone=5511967866367&text=ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20voc%C3%AAs."
+                    target="blank">
+                    <ion-icon class="icons" name="logo-whatsapp"></ion-icon></a>
             </div>
-            <div class="row">
-                <div class="home-info padd-15">
-                    <h3 class="name">Jennyfer Oliveira</h3>
-                    <h3 class="funcao"></h3>
-                    <p>Responsável por ser a nossa designer geral, Jennyfer também é a gerente da nossa empresa e gerente de projetos. É ela quem cuida da documetação e organização das equipes.</p>
-                </div>
-                <div class="home-img padd-15">
-                    <img src="img/foto.png" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="home-info padd-15">
-                    <h3 class="name">Thiago Pereira</h3>
-                    <h3 class="funcao"></h3>
-                    <p>Thiago é o nosso programador e desenvolvedor front-end, é ele o responsável pela elaboração e criação de aplicativos. Além disso ele é um dos nossos contribuidores com a função de designer da empresa.</p>
-                </div>
-                <div class="home-img padd-15">
-                    <img src="img/grupo/thigo.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <br><br>
-    <footer>
-        <p>nossas redes sociais</p>
-        <div class="share">
-            <a href="#" target="blank"><ion-icon class="icons" name="logo-instagram"></ion-icon></a>
-            <a href="https://twitter.com/_StormComp" target="blank"><ion-icon class="icons" name="logo-twitter"></ion-icon></a>
-            <a
-              href="https://api.whatsapp.com/send?phone=5511967866367&text=eae%20pigs%2C%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20sneakers." target="blank"><ion-icon class="icons" name="logo-whatsapp"></ion-icon></a>
-          </div>
-        <p class="copy">Copyright © By STORM</p>
-    </footer>
+            <p class="copy">Copyright © By STORM</p>
+        </footer>
         <!-- importação dos icons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="js/scroll.js"></script>
+        <script src="js/scroll.js"></script>
 </body>
 
 </html>
