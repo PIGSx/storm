@@ -1,16 +1,16 @@
 :root{
     --white: #fff;
     --purple: #370f53;
+	--roxo: #9f37ea;
     --wine: #48142c;
-    --pink: #f04393;
-    --pink2: #f9004d;
+    --pink: #f9004d;
 }
 html{
     font-size: 65%;
     scroll-behavior: smooth;
 }
 span{
-	color: var(--pink2);
+	color: var(--roxo);
 }
 .nav-list a{
     font-size: 16px;
@@ -42,7 +42,7 @@ span{
     padding: 0 4rem;
 }
 .about-text h1{
-    color: var(--purple);
+    color: var(--roxo);
     font-size: 40px;
     margin-bottom: 15px;
 }
@@ -69,7 +69,7 @@ span{
     padding: 0 4rem;
 }
 .logoS-content h1{
-    color: var(--purple);
+    color: var(--roxo);
     font-size: 40px;
     margin-bottom: 15px;
 }
