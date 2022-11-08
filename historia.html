@@ -1,14 +1,18 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Document</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/historia.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <a class="logo" href="index.html">
@@ -30,53 +34,79 @@
         </ul>
     </nav>
     <script src="js/menu.js"></script>
-    
-    <div class="about">
-        <div class="main-about">
-            <div class="about-content">
-                <div class="about-inner">
-                    <img class="image" src="img/logos/placa.png" alt="">
-                </div>
-            </div>
+    <!-- botao de inicio -->
+    <article>
+        <button class="scrollTop" onclick="backTop();">
+            <img src="img/png/arrow.svg" alt="">
+        </button>
 
-            <div class="about-content">
-                <div class="about-inner">
-                    <div class="about-text">
-                        <h1>Como tudo começou..</h1>
-                        <p>adicionar texto</p>
+        <div class="about">
+            <div class="main-about">
+                <div class="about-content">
+                    <div class="about-inner">
+                        <img class="image" src="img/logos/placa.png" alt="">
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-inner">
+                        <div class="about-text">
+                            <h1>Como tudo começou..</h1>
+                            <p>adicionar texto</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="logoS">
-        <div class="main-logoS">
-            <div class="main-inner">
-                <div class="logoS-content">
-                    <h1>Nossa Logo</h1>
-                    <p>Visando ter uma logo "minimalista", nós da storm optamos por ter esse "S" como simbolo representante da empresa.</p>
+        <div class="logoS">
+            <div class="main-logoS">
+                <div class="main-inner">
+                    <div class="logoS-content">
+                        <h1>Nossa Logo</h1>
+                        <p>Visando ter uma logo "minimalista", nós da storm optamos por ter esse "S" como simbolo
+                            representante da empresa.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="main-inner">
-                <div class="logoS-content logoS-image">
-                    <img src="img/logos/s-roxo.png" alt="">
+                <div class="main-inner">
+                    <div class="logoS-content logoS-image">
+                        <img src="img/logos/s-roxo.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <p>nossas redes sociais</p>
-        <div class="share">
-            <a href="#" target="blank"><ion-icon class="icons" name="logo-instagram"></ion-icon></a>
-            <a href="https://twitter.com/_StormComp" target="blank"><ion-icon class="icons" name="logo-twitter"></ion-icon></a>
-            <a
-              href="https://api.whatsapp.com/send?phone=5511967866367&text=eae%20pigs%2C%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20sneakers." target="blank"><ion-icon class="icons" name="logo-whatsapp"></ion-icon></a>
-          </div>
-        <p class="copy">Copyright © By STORM</p>
-    </footer>
+    </article>
+    <!-- script do scroll -->
+    <script>
+        window.addEventListener('scroll', function(){
+            let scroll = document.querySelector('.scrollTop')
+            scroll.classList.toggle('active', window.scrollY > 250)
+        })
+        function backTop(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
+        <footer>
+            <p>Redes Sociais</p>
+            <h3 class="siga">siga nossas redes sociais e fique por dentro de tudo que acontece no dia a dia da
+                <span>storm</span>.</h3>
+            <div class="share">
+                <a href="#" target="blank">
+                    <ion-icon class="icons" name="logo-instagram"></ion-icon></a>
+                <a href="https://twitter.com/_StormComp" target="blank">
+                    <ion-icon class="icons" name="logo-twitter"></ion-icon></a>
+                <a href="https://api.whatsapp.com/send?phone=5511967866367&text=ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20voc%C3%AAs."
+                    target="blank">
+                    <ion-icon class="icons" name="logo-whatsapp"></ion-icon></a>
+            </div>
+            <p class="copy">Copyright © By STORM</p>
+        </footer>
         <!-- importação dos icons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="js/scroll.js"></script>
+        <script src="js/scroll.js"></script>
 </body>
+
 </html>
