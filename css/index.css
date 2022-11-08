@@ -13,11 +13,9 @@
 	transform: translateY(-50%);
 }
 span{
-	color: var(--white);
+	color: var(--pink2);
 }
-span2{
-	color: var(--wine)
-}
+
 h1{
 	color: var(--white);
 	margin: 20px 0px 20px;
@@ -111,8 +109,8 @@ h5{
 .txt p{
 	color: var(--white);
 	font-size: 16px;
-	line-height: 27px;
-	margin-bottom: 25px;
+	line-height: 20px;
+	margin-bottom: 15px;
 }
 .card .button{
 	background-color:var(--purple);
@@ -128,8 +126,9 @@ h5{
 	background-color: transparent;
 	border: 2px solid var(--purple);
 }
-/* scroll animado */
 
+
+/* scroll animado */
 .content, .fundo img, .gallery, .service{
 	visibility: hidden;
 }
