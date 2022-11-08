@@ -1,9 +1,9 @@
 :root{
     --white: #fff;
     --purple: #370f53;
+	--roxo: #9f37ea;
     --wine: #48142c;
-    --pink: #f04393;
-    --pink2: #f9004d;
+    --pink: #f9004d;
 }
 /* apresentação */
 .content{
@@ -13,7 +13,7 @@
 	transform: translateY(-50%);
 }
 span{
-	color: var(--pink2);
+	color: var(--roxo);
 }
 
 h1{
@@ -99,7 +99,10 @@ h3{
 	display: block;
 	text-align: center;
 	margin: 25px 40%;
-	color: var(--pink);
+	color: var(--roxo);
+}
+.card span{
+	color: #9f37ea;
 }
 h5{
 	color: var(--white);
