@@ -1,0 +1,111 @@
+:root{
+    --white: #fff;
+    --purple: #370f53;
+	--roxo: #9f37ea;
+    --wine: #48142c;
+    --pink: #f9004d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top: 2%;
+}
+
+h1,
+h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+h1::before {
+    /* content: "📧"; */
+    display: block;
+}
+
+h2::before {
+    display: block;
+}
+/* obrigado */
+.obg{
+   margin-top: 20%;
+}
+.obg span{
+    color: red;
+}
+/* continuação do formulario */
+.form {
+    width: 100%;
+    max-width: 30rem;
+    font-size: 1rem;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+    display: block;
+    width: 100%;
+}
+
+.form label {
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea {
+    min-height: 10rem;
+    resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+    outline: none;
+    border-color: var(--roxo);
+    box-shadow: 0 0 0 3px var(--purple);
+}
+
+.form button {
+    display: block;
+    padding: 1rem;
+    background: var(--purple);
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.form button:hover,
+.form button:focus {
+    outline: none;
+    background: var(--roxo);
+}
