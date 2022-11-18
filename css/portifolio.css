@@ -1,0 +1,80 @@
+:root{
+    --white: #fff;
+    --purple: #370f53;
+	--roxo: #9f37ea;
+    --wine: #48142c;
+    --pink: #f9004d;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+a{
+    text-decoration: none;
+}
+main{
+	background-image:url('../img/fundoS.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+    display: grid;
+    place-items: center;
+  }
+.container{
+    width: 30em;
+	margin: 4em;
+}
+.head_section img{
+    display:block;
+    margin: 0 auto;
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.head_section p{
+    text-align: center;
+	margin-top: 13px;
+	font-size: 1.5em;
+    color: rgb(5, 120, 252);
+}
+.social_links ul li{
+    width: 100%;
+    margin: 1.2rem 0;
+    padding: 0.4rem 0.9rem;
+    backdrop-filter: blur( 0px );
+    border-radius: 5px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    box-shadow: 0 0 0.8rem  var(--purple);
+}
+.social_links ul li a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    font-size: 1rem;
+
+}
+.social_links ul li a ion-icon{
+    text-align: center;
+	padding: 10px 20px;
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+    transform: scale(1.4) translateZ(50px);
+    transition: 0.25s;
+}
+.social_links ul li a span{
+    line-height: 1.4rem;
+}
+.social_links ul li:hover{
+    background: #9f37ea46;
+    transition: 0.5s;
+}
+@media only screen and (max-width: 549px) {
+    .container{
+        width: 88vw;
+    }
+  }
