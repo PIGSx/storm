@@ -5,7 +5,7 @@
     --wine: #48142c;
     --pink: #f9004d;
 }
-/* apresentação */
+/*===== apresentação =====*/
 .content{
 	position: absolute;
 	top: 50%;
@@ -46,7 +46,7 @@ h3{
 	left: 65%;
     position: relative;
 }
-/* galeria */
+/*===== galeria =====*/
 .gallery{
 	margin-top: 20px;
 	padding: 50px;
@@ -64,77 +64,115 @@ h3{
 }
 
 
-/* serviços */
-.service{
-	margin-top: 2%;
-	width: 100%;
-	padding: 100px 0px;
-}
-.title h2{
+/*===== portfolio =====*/
+#port .title h2{
 	color: var(--white);
-	font-size: 75px;
+	font-size: 60px;
 	width: 600px;
-	margin: 30px auto;
+	margin-top: 10%;
+	margin-left: 25%;
 	text-align: center;
 }
-.box{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 400px;
+#port .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-.card{
-	height: 365px;
-	width: 335px;
-	padding: 20px 35px;
-	background: #191919;
-	border-radius: 20px;
-	margin: 15px;
-	position: relative;
-	overflow: hidden;
+#port .container input[type=radio]{
+    display: none;
+}
+#port .container .card{
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    left: 0;
+    right: 0;
+    margin: 90px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 0 10px 0 rgba(21,111,195,0.5);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+#port .container .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#port .container .card h1{
+    position: absolute;
+    z-index: 9;
+    color: #fff;
+    font-size: 3rem;
 	text-align: center;
+    margin-top: 60px;
 }
-.card ion-icon{
-	font-size: 50px;
-	display: block;
-	text-align: center;
-	margin: 25px 40%;
-	color: var(--roxo);
+#port .container .card p{
+    position: absolute;
+    z-index: 9;
+    width: 400px;
+    color: #fff;
+    margin-top: 200px;
 }
-.card span{
-	color: #9f37ea;
-}
-h5{
-	color: var(--white);
-	font-size: 23px;
-	margin-bottom: 15px;
-}
-.txt p{
-	color: var(--white);
-	font-size: 16px;
-	line-height: 20px;
-	margin-bottom: 15px;
-}
-.card .button{
-	background-color:var(--purple);
-	color: var(--white);
+#port .container .card .button{
+	position: absolute;
+    z-index: 9;
+    margin-top: 350px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
 	text-decoration: none;
-	border: 2px solid transparent;
 	font-weight: bold;
-	padding: 9px 22px;
-	border-radius: 30px;
-	transition: .5s; 
+    color: var(--white);
+    background-color:var(--purple);
+    cursor: pointer;
+	transition: .5s;
 }
-.card .button:hover{
+#port .container .card .button:hover{
 	background-color: transparent;
 	border: 2px solid var(--purple);
 }
+#port .container .cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/*===== animação dos cards =====*/
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3{
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
 
 
-/* scroll animado */
-.content, .fundo img, .gallery, .service{
+/*===== scroll animado===== */
+.content, .fundo img, .gallery, #port{
 	visibility: hidden;
 }
+
+
+
 @media screen and (max-width: 768px){
 	.content{
 		position: absolute;

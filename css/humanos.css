@@ -88,7 +88,7 @@ h3.funcao {
     border-radius: 5px;
     height: 300px;
 }
-/* scroll */
+/*===== scroll =====*/
 .row, .home-img{
     visibility: hidden;
 }

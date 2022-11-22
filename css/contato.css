@@ -32,21 +32,22 @@ h2 {
 }
 
 h1::before {
-    /* content: "📧"; */
     display: block;
 }
 
 h2::before {
     display: block;
 }
-/* obrigado */
+
+/*===== obrigado =====*/
 .obg{
    margin-top: 20%;
 }
 .obg span{
     color: red;
 }
-/* continuação do formulario */
+
+/*===== continuação do formulario =====*/
 .form {
     width: 100%;
     max-width: 30rem;
