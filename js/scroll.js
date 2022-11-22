@@ -9,7 +9,7 @@ sr.reveal('.fundo img', {duration: 1000});
 sr.reveal('.gallery', {
     rotate: { x: 0, y: 80, z: 0},
     duration: 2000});
-sr.reveal('.service', {duration: 2000});
+sr.reveal('#port', {duration: 2000});
 
 /* historia */
 sr.reveal('.image',{ delay:400, origin:'left' })
