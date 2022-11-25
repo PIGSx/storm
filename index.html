@@ -8,10 +8,9 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -40,36 +39,36 @@
         <button class="scrollTop" onclick="backTop();">
             <img src="img/png/arrow.svg" alt="">
         </button>
-    
-    <!-- apresentação -->
-    <div class="content">
-        <h1><span>storm</span></h1>
-        <h3>Rápido como um raio.</h3>
-        <br><br>
-        <p style="text-align: center;">
-            <a class="button" href="historia.html">nossa história</a>
-        </p>
-    </div>
-    <div class="fundo">
-        <img src="img/png/predio.png" alt="">
-    </div>
+
+        <!-- apresentação -->
+        <div class="content">
+            <h1><span>storm</span></h1>
+            <h3>Rápido como um raio.</h3>
+            <br><br>
+            <p style="text-align: center;">
+                <a class="button" href="historia.html">nossa história</a>
+            </p>
+        </div>
+        <div class="fundo">
+            <img src="img/png/predio.png" alt="">
+        </div>
 
 
-    <!-- galeria da logo -->
+        <!-- galeria da logo -->
 
-    <div class="gallery">
-        <div class="g-item">
-            <img src="img/logos/s-branco.png" alt="" class="galleryImg">
+        <div class="gallery">
+            <div class="g-item">
+                <img src="img/logos/s-branco.png" alt="" class="galleryImg">
+            </div>
+            <div class="g-item">
+                <img src="img/logos/branco-roxo.png" alt="" class="galleryImg">
+                <h1 class="g-tittle">o <span>detalhe</span> que falta no seu sistema.</h1>
+            </div>
+            <div class="g-item">
+                <img src="img/logos/s-roxo.png" alt="" class="galleryImg">
+            </div>
         </div>
-        <div class="g-item">
-            <img src="img/logos/branco-roxo.png" alt="" class="galleryImg">
-            <h1 class="g-tittle">o <span>detalhe</span> que falta no seu sistema.</h1>
-        </div>
-        <div class="g-item">
-            <img src="img/logos/s-roxo.png" alt="" class="galleryImg">
-        </div>
-    </div>
-    <!-- serviços -->
+        <!-- serviços -->
         <section id="port">
             <div class="title">
                 <h2>Nossos Serviços</h2>
@@ -83,67 +82,178 @@
                     <label class="card" for="item-1" id="song-1">
                         <img src="img/card/fundo.PNG" alt="">
                         <h1>Web Desenvolvimento</h1>
-                            <p>layouts de sites;<br>
+                        <p>layouts de sites;<br>
                             Programação de menus e ferramentas de navegação;<br>
                             Gestão de dados;<br>
                             Segurança e privacidade dos usuários.</p><br>
-
                     </label>
 
                     <label class="card" for="item-2" id="song-2">
                         <img src="img/card/fundo.PNG" alt="">
                         <h1>Programas</h1>
-                            <p>desenvolvimento de sistemas simples ou mais complexos por meio de linguagens de programação,
-                                sendo responsável por testar essas aplicações para verificar se estão funcionando corretamente.
-                            </p>
-
+                        <p>desenvolvimento de sistemas simples ou mais complexos por meio de linguagens de programação,
+                            sendo responsável por testar essas aplicações para verificar se estão funcionando
+                            corretamente.
+                        </p>
                     </label>
-    
-    
+
                     <label class="card" for="item-3" id="song-3">
                         <img src="img/card/fundo.PNG" alt="">
                         <h1>Portifolio</h1>
-                            <p>Clique no botão abaixo que nós te direcionaremos para uma aba com todos os nossos projetos.</p>
-                            <a class="button" href="portifolio.html">saiba mais</a>
+                        <p>Clique no botão abaixo que nós te direcionaremos para uma aba com todos os nossos projetos.
+                        </p>
+                        <a class="button" href="portifolio.html">saiba mais</a>
                     </label>
                 </div>
             </div>
         </section>
-    </div>
-</article>
-<!-- script do scroll -->
-<script>
-    window.addEventListener('scroll', function(){
-        let scroll = document.querySelector('.scrollTop')
-        scroll.classList.toggle('active', window.scrollY > 250)
-    })
-    function backTop(){
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        })
-    }
-</script>
+        </div>
+        <!-- review da empresa -->
+        <section class="feedback section" id="feedback">
+            <div class="container">
+              <div class="section-header">
+                <h3 class="title" data-title="Oque as pessoas dizem sobre a">Storm</h3>
+              </div>
+    
+              <div class="testi-content grid-2">
+                <div class="column-1 reviews">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide review">
+                        <i class="fas fa-quote-left quote"></i>
+                        <div class="rate">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+    
+                        <p class="review-text">
+                          otima empresa, super atenciosos e aquele pigs é um gato!!
+                        </p>
+    
+                        <div class="review-info">
+                          <h3 class="review-name">kylie jenner</h3>
+                          <h5 class="review-job">model, Eua</h5>
+                        </div>
+                      </div>
+    
+                      <div class="swiper-slide review">
+                        <i class="fas fa-quote-left quote"></i>
+                        <div class="rate">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+    
+                        <p class="review-text">
+                          sabe quando você está perdida e não sabe oque fazer? eu estava assim até conhecer a storm.
+                        </p>
+    
+                        <div class="review-info">
+                          <h3 class="review-name">kylie</h3>
+                          <h5 class="review-job">CEO, Drope Sneakers</h5>
+                        </div>
+                      </div>
+    
+                      <div class="swiper-slide review">
+                        <i class="fas fa-quote-left quote"></i>
+                        <div class="rate">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+    
+                        <p class="review-text">
+                          me ajudaram muito na criação do sistema para barbearia
+                        </p>
+    
+                        <div class="review-info">
+                          <h3 class="review-name">Junin2001</h3>
+                          <h5 class="review-job">Director of BarberShop, SP </h5>
+                        </div>
+                      </div>
+    
+                      <div class="swiper-slide review">
+                        <i class="fas fa-quote-left quote"></i>
+                        <div class="rate">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+    
+                        <p class="review-text">
+                          pigs é lindo
+                        </p>
+    
+                        <div class="review-info">
+                          <h3 class="review-name">kylie</h3>
+                          <h5 class="review-job">designer, Itaquera</h5>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="review-nav swiper-button-prev">
+                      <i class="fas fa-long-arrow-alt-left"></i>
+                    </div>
+                    <div class="review-nav swiper-button-next">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="column-2 image">
+                  <img src="img/png/raio.png" alt="" class="img-element" />
+                </div>
+              </div>
+            </div>
+          </section>
+    </article>
     <!-- rodapé -->
     <footer>
         <p>Redes Sociais</p>
-        <h3 class="siga">siga nossas redes sociais e fique por dentro de tudo que acontece no dia a dia da <span>storm</span>.</h3>
+        <h3 class="siga">siga nossas redes sociais e fique por dentro de tudo que acontece no dia a dia da
+            <span>storm</span>.</h3>
         <div class="share">
-           <a href="https://www.instagram.com/_stormcomp/" target="blank">
+            <a href="https://www.instagram.com/_stormcomp/" target="blank">
                 <ion-icon class="icons" name="logo-instagram"></ion-icon></a>
             <a href="https://twitter.com/_StormComp" target="blank">
                 <ion-icon class="icons" name="logo-twitter"></ion-icon></a>
             <a href="https://api.whatsapp.com/send?phone=5511967866367&text=ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20voc%C3%AAs."
                 target="blank">
                 <ion-icon class="icons" name="logo-whatsapp"></ion-icon></a>
-            <a href="mailto:storm.tcc04@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+            <a href="mailto:storm.tcc04@gmail.com" target="_blank">
+                <ion-icon name="mail-outline"></ion-icon></a>
         </div>
         <p class="copy">Copyright © By STORM</p>
     </footer>
+    <!-- script do scroll -->
+    <script>
+        window.addEventListener('scroll', function () {
+            let scroll = document.querySelector('.scrollTop')
+            scroll.classList.toggle('active', window.scrollY > 250)
+        })
+        function backTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
     <!-- importação dos icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="js/scroll.js"></script>
+    <!-- importando slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
