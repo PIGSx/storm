@@ -1,31 +1,35 @@
-:root{
-    --white: #fff;
-    --purple: #370f53;
+:root {
+	--white: #fff;
+	--purple: #370f53;
 	--roxo: #9f37ea;
-    --wine: #48142c;
-    --pink: #f9004d;
+	--wine: #48142c;
+	--pink: #f9004d;
 }
+
 /*===== apresentação =====*/
-.content{
+.content {
 	position: absolute;
 	top: 50%;
 	left: 8%;
 	transform: translateY(-50%);
 }
-span{
+
+span {
 	color: var(--roxo);
 }
 
-h1{
+h1 {
 	color: var(--white);
 	margin: 20px 0px 20px;
 	font-size: 60px;
 }
-h3{
+
+h3 {
 	color: var(--white);
 	font-size: 20px;
 }
-.content .button{
+
+.content .button {
 	background-color: var(--purple);
 	color: var(--white);
 	text-decoration: none;
@@ -33,39 +37,44 @@ h3{
 	font-weight: bold;
 	padding: 9px 22px;
 	border-radius: 30px;
-	transition: .6s; 
+	transition: .6s;
 }
-.content .button:hover{
+
+.content .button:hover {
 	background-color: transparent;
 	border: 2px solid var(--purple);
 }
 
-.fundo img{
+.fundo img {
 	margin-top: 7%;
 	height: 60%;
 	left: 65%;
-    position: relative;
+	position: relative;
 }
+
 /*===== galeria =====*/
-.gallery{
+.gallery {
 	margin-top: 20px;
 	padding: 50px;
 	display: flex;
 }
-.g-item{
+
+.g-item {
 	flex: 1;
 	padding: 5px;
 }
-.galleryImg{
+
+.galleryImg {
 	width: 100%;
 }
-.g-tittle{
+
+.g-tittle {
 	font-size: 20px;
 }
 
 
 /*===== portfolio =====*/
-#port .title h2{
+#port .title h2 {
 	color: var(--white);
 	font-size: 60px;
 	width: 600px;
@@ -73,135 +82,322 @@ h3{
 	margin-left: 25%;
 	text-align: center;
 }
-#port .container{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+
+#port .container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
-#port .container input[type=radio]{
-    display: none;
+
+#port .container input[type=radio] {
+	display: none;
 }
-#port .container .card{
-    position: absolute;
-    width: 40%;
-    height: 80%;
-    left: 0;
-    right: 0;
-    margin: 90px auto;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    box-shadow: 0 0 10px 0 rgba(21,111,195,0.5);
-    transition: 0.4s ease;
-    cursor: pointer;
-}
-#port .container .card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-#port .container .card h1{
-    position: absolute;
-    z-index: 9;
-    color: #fff;
-    font-size: 3rem;
-	text-align: center;
-    margin-top: 60px;
-}
-#port .container .card p{
-    position: absolute;
-    z-index: 9;
-    width: 400px;
-    color: #fff;
-    margin-top: 200px;
-}
-#port .container .card .button{
+
+#port .container .card {
 	position: absolute;
-    z-index: 9;
-    margin-top: 350px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: none;
+	width: 40%;
+	height: 80%;
+	left: 0;
+	right: 0;
+	margin: 90px auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	box-shadow: 0 0 10px 0 rgba(21, 111, 195, 0.5);
+	transition: 0.4s ease;
+	cursor: pointer;
+}
+
+#port .container .card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+#port .container .card h1 {
+	position: absolute;
+	z-index: 9;
+	color: #fff;
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 60px;
+}
+
+#port .container .card p {
+	position: absolute;
+	z-index: 9;
+	width: 400px;
+	color: #fff;
+	margin-top: 200px;
+}
+
+#port .container .card .button {
+	position: absolute;
+	z-index: 9;
+	margin-top: 350px;
+	padding: 10px 20px;
+	border-radius: 20px;
+	border: none;
 	text-decoration: none;
 	font-weight: bold;
-    color: var(--white);
-    background-color:var(--purple);
-    cursor: pointer;
+	color: var(--white);
+	background-color: var(--purple);
+	cursor: pointer;
 	transition: .5s;
 }
-#port .container .card .button:hover{
+
+#port .container .card .button:hover {
 	background-color: transparent;
 	border: 2px solid var(--purple);
 }
-#port .container .cards{
-    position: relative;
-    width: 100%;
-    height: 100%;
+
+#port .container .cards {
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
+
 /*===== animação dos cards =====*/
-#item-1:checked ~ .cards #song-3,
-#item-2:checked ~ .cards #song-1,
-#item-3:checked ~ .cards #song-2{
-    transform: translateX(-40%) scale(0.8);
-    opacity: 0.4;
-    z-index: 0;
+#item-1:checked~.cards #song-3,
+#item-2:checked~.cards #song-1,
+#item-3:checked~.cards #song-2 {
+	transform: translateX(-40%) scale(0.8);
+	opacity: 0.4;
+	z-index: 0;
 }
-#item-1:checked ~ .cards #song-2,
-#item-2:checked ~ .cards #song-3,
-#item-3:checked ~ .cards #song-1{
-    transform: translateX(40%) scale(0.8);
-    opacity: 0.4;
-    z-index: 0;
+
+#item-1:checked~.cards #song-2,
+#item-2:checked~.cards #song-3,
+#item-3:checked~.cards #song-1 {
+	transform: translateX(40%) scale(0.8);
+	opacity: 0.4;
+	z-index: 0;
 }
-#item-1:checked ~ .cards #song-1,
-#item-2:checked ~ .cards #song-2,
-#item-3:checked ~ .cards #song-3{
-    transform: translateX(0) scale(1);
-    opacity: 1;
-    z-index: 1;
+
+#item-1:checked~.cards #song-1,
+#item-2:checked~.cards #song-2,
+#item-3:checked~.cards #song-3 {
+	transform: translateX(0) scale(1);
+	opacity: 1;
+	z-index: 1;
+}
+
+/*==== reviews ====*/
+.section {
+	padding: 7rem 0;
+	overflow: hidden;
+}
+
+.section-header {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.feedback {
+	overflow: hidden;
+}
+
+.feedback .container {
+	position: relative;
+	z-index: 5;
+	max-width: 92rem;
+	padding: 0 4rem;
+	margin: 0 auto;
+}
+
+.testi-content {
+	margin-top: 6rem;
+}
+
+.reviews {
+	overflow: hidden;
+}
+
+.review {
+	position: relative;
+	padding: 2rem 1.5rem;
+}
+
+.quote {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #784cfb;
+	opacity: 0.04;
+	font-size: 8rem;
+}
+
+.rate {
+	display: flex;
+	font-size: 1.4rem;
+	color: #ebc000;
+	margin-bottom: 1.5rem;
+}
+
+.rate i {
+	margin-right: 0.3rem;
+}
+
+.review-text {
+	font-size: 1.35rem;
+	font-weight: 300;
+	color: var(--white);
+	line-height: 1.7;
+}
+
+.review-info {
+	margin-top: 2rem;
+}
+
+.review-name {
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: var(--roxo);
+}
+
+.review-job {
+	font-size: 1.15rem;
+	font-weight: 300;
+	color: #777;
+}
+
+.review-nav {
+	bottom: 2.2rem;
+	top: initial;
+	font-size: 1.8rem;
+	color: #784cfb;
+	;
+}
+
+.swiper-button-next {
+	right: 2rem;
+	left: initial;
+}
+
+.swiper-button-prev {
+	right: 4.5rem;
+	left: initial;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+	display: none;
+}
+
+/*==== imagem reviews ====*/
+.feedback img {
+	width: 100%;
+}
+
+.image {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.grid-2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-content: center;
+}
+
+/*==== textos dos reviews ====*/
+.title {
+	position: relative;
+	display: inline-block;
+	padding-bottom: 1rem;
+	line-height: 1;
+	font-size: 2.8rem;
+	margin-bottom: 0.6rem;
+}
+
+.title:before {
+	content: attr(data-title);
+	display: block;
+	margin-bottom: 0.4rem;
+	color: #784cfb;
+	font-size: 1.15rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.title:after {
+	content: "";
+	position: absolute;
+	width: 90px;
+	height: 5px;
+	border-radius: 3px;
+	background-color: var(--roxo);
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.swiper-button-next {
+	right: 2rem;
+	left: initial;
+}
+
+.swiper-button-prev {
+	right: 4.5rem;
+	left: initial;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+	display: none;
 }
 
 
 /*===== scroll animado===== */
-.content, .fundo img, .gallery, #port{
+.content, .fundo img, .gallery, #port {
 	visibility: hidden;
 }
 
 
 
-@media screen and (max-width: 768px){
-	.content{
+@media screen and (max-width: 768px) {
+	.content {
 		position: absolute;
 		width: 20%;
 		top: 40%;
 	}
-	.fundo{
+
+	.fundo {
 		height: 50%;
 		margin-top: 35%;
 	}
-	h3{
+
+	h3 {
 		font-size: 20px;
 		text-align: center;
 		margin-left: 12px;
 	}
-	.content .button{
-	    padding: 26px 6px;
+
+	.content .button {
+		padding: 26px 6px;
 		width: 15vh;
 		display: flex;
 		text-align: center;
 		font-size: 18px;
 	}
-	.gallery{
+
+	.gallery {
 		padding: 0px;
 	}
-	.galleryImg{
+
+	.galleryImg {
 		width: 20vh;
 	}
-	.title h2{
+
+	.title h2 {
 		font-size: 28px;
 	}
 }
