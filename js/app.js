@@ -3,7 +3,7 @@ var mySwiper = new Swiper(".swiper-container", {
     slidesPerView: 1,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 3000,
     },
     navigation: {
       prevEl: ".swiper-button-prev",
