@@ -110,3 +110,12 @@ h2::before {
     outline: none;
     background: var(--roxo);
 }
+
+@media screen and (max-width: 768px){
+    .container {
+        margin-top: 10%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
