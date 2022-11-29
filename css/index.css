@@ -5,31 +5,43 @@
 	--wine: #48142c;
 	--pink: #f9004d;
 }
-
-/*===== apresentação =====*/
-.content {
-	position: absolute;
-	top: 50%;
-	left: 8%;
-	transform: translateY(-50%);
-}
-
+/*===== geral =====*/
 span {
 	color: var(--roxo);
 }
 
-h1 {
+h1, h3 {
 	color: var(--white);
-	margin: 20px 0px 20px;
-	font-size: 60px;
 }
 
-h3 {
-	color: var(--white);
-	font-size: 20px;
+/*===== apresentação =====*/
+#showcase {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background: url('../img/predio.jpg') no-repeat center center/cover;
+    /* Overlay */
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;
 }
 
-.content .button {
+#show-container {
+    text-align: center;
+}
+
+#show-container h2 {
+    font-size: 3rem;
+}
+
+#show-container p {
+    font-size: 1.4rem;
+    padding: 7px 0;
+}
+
+#show-container .btn {
+	display: inline-block;
 	background-color: var(--purple);
 	color: var(--white);
 	text-decoration: none;
@@ -40,16 +52,9 @@ h3 {
 	transition: .6s;
 }
 
-.content .button:hover {
+#show-container .btn:hover {
 	background-color: transparent;
 	border: 2px solid var(--purple);
-}
-
-.fundo img {
-	margin-top: 7%;
-	height: 60%;
-	left: 65%;
-	position: relative;
 }
 
 /*===== galeria =====*/
@@ -74,7 +79,7 @@ h3 {
 
 
 /*===== portfolio =====*/
-#port .title h2 {
+#port .title1 h2 {
 	color: var(--white);
 	font-size: 60px;
 	width: 600px;
@@ -290,7 +295,7 @@ h3 {
 
 /*==== imagem reviews ====*/
 .feedback img {
-	width: 100%;
+	width: 90%;
 }
 
 .image {
