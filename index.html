@@ -27,11 +27,8 @@
             <li><a href="index.html">inicio</a></li>
             <li><a href="humanos.html">quem somos</a></li>
             <li><a href="contato.html">contato</a></li>
-            <li class="log"><a href="">login</a></li>
         </ul>
-        <ul class="nav-login">
-            <li><a href="#"></a></li>
-        </ul>
+        <ul class="nav-login"></ul>
     </nav>
     <script src="js/menu.js"></script>
     <!-- botao de inicio -->
@@ -58,7 +55,7 @@
                 <img src="img/logos/s-branco.png" alt="" class="galleryImg">
             </div>
             <div class="g-item">
-                <img src="img/logos/branco-roxo.png" alt="" class="galleryImg">
+                <img src="img/logos/branco-roxo.png" alt="" class="galleryImg" id="imgCell">
                 <h1 class="g-tittle">o <span>detalhe</span> que falta no seu sistema.</h1>
             </div>
             <div class="g-item">
@@ -77,7 +74,7 @@
                 <div class="cards">
 
                     <label class="card" for="item-1" id="song-1">
-                        <img src="img/card/fundo.PNG" alt="">
+                        <img src="img/card/background.png" alt="">
                         <h1>Web Desenvolvimento</h1>
                         <p>layouts de sites;<br>
                             Programação de menus e ferramentas de navegação;<br>
@@ -86,7 +83,7 @@
                     </label>
 
                     <label class="card" for="item-2" id="song-2">
-                        <img src="img/card/fundo.PNG" alt="">
+                        <img src="img/card/background.png" alt="">
                         <h1>Programas</h1>
                         <p>desenvolvimento de sistemas simples ou mais complexos por meio de linguagens de programação,
                             sendo responsável por testar essas aplicações para verificar se estão funcionando
@@ -95,7 +92,7 @@
                     </label>
 
                     <label class="card" for="item-3" id="song-3">
-                        <img src="img/card/fundo.PNG" alt="">
+                        <img src="img/card/background.png" alt="">
                         <h1>Portifolio</h1>
                         <p>Clique no botão abaixo que nós te direcionaremos para uma aba com todos os nossos projetos.
                         </p>
@@ -106,6 +103,7 @@
         </section>
         </div>
         <!-- review da empresa -->
+        <header id="show-review">
         <section class="feedback section" id="feedback">
             <div class="container">
               <div class="section-header">
@@ -131,8 +129,8 @@
                         </p>
     
                         <div class="review-info">
-                          <h3 class="review-name">kylie jenner</h3>
-                          <h5 class="review-job">model, Eua</h5>
+                          <h3 class="review-name">kylie</h3>
+                          <h5 class="review-job">model, CAN</h5>
                         </div>
                       </div>
     
@@ -152,7 +150,7 @@
     
                         <div class="review-info">
                           <h3 class="review-name">Talita Oliveira</h3>
-                          <h5 class="review-job">CEO, Drope Sneakers</h5>
+                          <h5 class="review-job">CEO of Drope Sneakers, EUA</h5>
                         </div>
                       </div>
     
@@ -195,6 +193,26 @@
                           <h5 class="review-job">enfermeira, SP</h5>
                         </div>
                       </div>
+
+                      <div class="swiper-slide review">
+                        <i class="fas fa-quote-left quote"></i>
+                        <div class="rate">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+    
+                        <p class="review-text">
+                          Gostaria de dizer que o atendimento, administração da storm é surreal de bom. Parabéns a todos os envolvidos!!👏👏
+                        </p>
+    
+                        <div class="review-info">
+                          <h3 class="review-name">Sofia Arruda</h3>
+                          <h5 class="review-job">Confeiteira, SP </h5>
+                        </div>
+                      </div>
                     </div>
     
                     <div class="review-nav swiper-button-prev">
@@ -205,13 +223,10 @@
                     </div>
                   </div>
                 </div>
-    
-                <div class="column-2 image">
-                  <img src="img/png/raio.png" alt="" class="img-element">
-                </div>
               </div>
             </div>
           </section>
+        </header>
     </article>
     <!-- rodapé -->
     <footer>
