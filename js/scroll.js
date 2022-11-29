@@ -3,7 +3,7 @@ const sr = ScrollReveal ({
     duration : 2000,
     reset : false,
   })
-/* pagina inicial */
+/*==== pagina inicial ====*/
 sr.reveal('.content', {duration: 1000});
 sr.reveal('.fundo img', {duration: 1000});
 sr.reveal('.gallery', {
@@ -11,12 +11,16 @@ sr.reveal('.gallery', {
     duration: 2000});
 sr.reveal('#port', {duration: 2000});
 
-/* historia */
+/*==== historia ====*/
 sr.reveal('.image',{ delay:400, origin:'left' })
 sr.reveal('.about-text',{ delay:350, origin:'right' })
 sr.reveal('.logoS-content',{ delay:350, origin:'left' })
 sr.reveal('.logoS-image',{ delay:400, origin:'right' })
 
-/* quem somos*/
+/*==== quem somos ====*/
 sr.reveal('.row',{ delay:400, origin:'left' })
 sr.reveal('.home-img',{ delay:350, origin:'right' })
+
+/*==== rewiew ====*/
+sr.reveal('#show-review', {duration: 1000});
+sr.reveal('.section-header', {duration: 1000});
