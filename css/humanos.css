@@ -94,4 +94,23 @@ h3.funcao {
 }
 
 @media screen and (max-width: 768px){
+    .container {
+        max-width: 100%;
+    }
+    .row {
+        margin-top: 25%;
+    }
+    .home .home-info {
+        max-width: 50%;
+    }  
+    .home-img::after {
+        display: none;
+    }
+    
+    .home-img::before {
+        display: none;
+    }
+    .home .home-img img {
+        height: 200px;
+    }
 }

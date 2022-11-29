@@ -75,6 +75,7 @@ h1, h3 {
 
 .g-tittle {
 	font-size: 20px;
+	text-align: center;
 }
 
 
@@ -111,7 +112,7 @@ h1, h3 {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	box-shadow: 0 0 10px 0 rgba(21, 111, 195, 0.5);
+	box-shadow: 0 0 10px 0 #48142c;
 	transition: 0.4s ease;
 	cursor: pointer;
 }
@@ -275,7 +276,6 @@ h1, h3 {
 	top: initial;
 	font-size: 1.8rem;
 	color: #784cfb;
-	;
 }
 
 .swiper-button-next {
@@ -294,8 +294,17 @@ h1, h3 {
 }
 
 /*==== imagem reviews ====*/
-.feedback img {
-	width: 90%;
+#show-review {
+	margin-top: 10%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background: url('../img/raio-fundo-pc.png') no-repeat center center/cover;
+    /* Overlay */
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;
 }
 
 .image {
@@ -362,47 +371,61 @@ h1, h3 {
 
 
 /*===== scroll animado===== */
-.content, .fundo img, .gallery, #port {
+.content, .fundo img, .gallery, #port, #show-review, .section-header {
 	visibility: hidden;
 }
 
 
 
 @media screen and (max-width: 768px) {
-	.content {
-		position: absolute;
-		width: 20%;
-		top: 40%;
+	.g-item {
+		padding: 0;
 	}
-
-	.fundo {
-		height: 50%;
-		margin-top: 35%;
-	}
-
-	h3 {
-		font-size: 20px;
-		text-align: center;
-		margin-left: 12px;
-	}
-
-	.content .button {
-		padding: 26px 6px;
-		width: 15vh;
-		display: flex;
-		text-align: center;
-		font-size: 18px;
-	}
-
-	.gallery {
-		padding: 0px;
-	}
-
 	.galleryImg {
-		width: 20vh;
+		display: none;
+	}
+	#imgCell{
+		display: flex;
+		width: 40vh;
+	}
+	/* serviços */	
+	#port .title1 h2 {
+		margin-top: 30%;
+		margin-left: 10%;
+	}
+	
+	#port .container .card {
+		width: 68%;
+		height: 50%;
+	}
+	
+	#port .container .card h1 {
+		font-size: 2.5rem;
+	}
+	
+	#port .container .card p {
+		font-size: 18px;
+		margin-left: 30px;
+	}
+	.feedback img {
+		display: none;
+	}
+	#show-review {
+		height: 80vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: var(--white);
+		background: url('../img/raio-fundo-mobile.png') no-repeat center center/cover;
+		/* Overlay */
+		background-color: rgba(0,0,0,0.5);
+		background-blend-mode: color;
 	}
 
-	.title h2 {
-		font-size: 28px;
+	.grid-2 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
+	
 }
