@@ -84,7 +84,7 @@ span{
     width: 100%;
     object-fit: cover;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 999px){
     .logoS{
         margin-top: 10%;
     }

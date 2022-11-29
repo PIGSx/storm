@@ -93,7 +93,7 @@ h3.funcao {
     visibility: hidden;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 999px){
     .container {
         max-width: 100%;
     }
@@ -104,13 +104,27 @@ h3.funcao {
         max-width: 50%;
     }  
     .home-img::after {
+        right: 20px;
+        bottom: -40px;
+    }
+    
+    .home-img::before {
+        left: 20px;
+        top: -40px;
+    }
+    .home .home-img img {
+        height: 250px;
+    }
+}
+@media screen and (max-width: 700px){
+    .home .home-img img {
+        height: 200px;
+    }
+    .home-img::after {
         display: none;
     }
     
     .home-img::before {
         display: none;
-    }
-    .home .home-img img {
-        height: 200px;
     }
 }

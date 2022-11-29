@@ -111,7 +111,7 @@ h2::before {
     background: var(--roxo);
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 999px){
     .container {
         margin-top: 10%;
     }
