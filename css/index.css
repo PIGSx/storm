@@ -375,6 +375,7 @@ h1, h3 {
 
 
 @media screen and (max-width: 999px) {
+	/* galeria */
 	.g-item {
 		padding: 0;
 	}
@@ -385,18 +386,27 @@ h1, h3 {
 		display: flex;
 		width: 40vh;
 	}
+	/* serviços */
+	#port .title1 h2{
+		font-size: 3rem;
+	}
 	#port .container .card {
-		width: 68%;
-		height: 50%;
+		width: 50%;
+		height: 70%;
 	}
 	
 	#port .container .card h1 {
-		font-size: 2.5rem;
+		font-size: 1.5rem;
 	}
 	
 	#port .container .card p {
-		font-size: 18px;
+		font-size: 0.9rem;
 		left: 20px;
+		margin-top: 150px;
+		max-width: 20rem;
+	}
+	#port .container .card .button {
+		margin-top: 16rem;
 	}
 	/* reviews */
 	.feedback img {
@@ -420,4 +430,34 @@ h1, h3 {
 		justify-content: center;
 	}
 	
+}
+@media screen and (max-width: 676px){
+	/* serviços */
+	#port .title1 h2{
+		font-size: 2rem;
+	}
+	#port .container .card {
+		width: 65%;
+		height: 70%;
+	}
+	#port .container .card p {
+		max-width: 16rem;
+		font-size: 0.8rem;
+	}
+}
+@media screen and (max-width: 550px){
+	/* serviços */
+	#port .container .card p {
+		max-width: 14rem;
+	}
+	/* feedback */
+	.section{
+		margin-top: 9rem;
+	}
+}
+@media screen and (max-width: 460px){
+	/* serviços */
+	#port .container .card p {
+		max-width: 12rem;
+	}
 }
