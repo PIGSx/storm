@@ -461,3 +461,46 @@ h1, h3 {
 		max-width: 12rem;
 	}
 }
+
+/* responsive for celular deitado */
+@media screen and (orientation: landscape) and (max-width: 1400px) and (max-height: 868px){
+	#port .container .card {
+		width: 50%;
+		height: 90%;
+	}
+}
+@media screen and (orientation: landscape) and (max-height: 763px){
+	#port .container .card {
+		width: 40%;
+		height: 100%;
+	}
+}
+@media screen and (orientation: landscape) and (max-height: 686px){
+	#port .container .card .button {
+		margin-top: 16rem;
+	}
+		/* feedback */
+		.section{
+			margin-top: 9rem;
+		}
+}
+@media screen and (orientation: landscape) and (max-height: 560px){
+	#port .container .card {
+		width: 40%;
+		height: 110%;
+	}
+	/* feedback */
+	.section{
+		margin-top: 20rem;
+	}
+}
+@media screen and (orientation: landscape) and (max-height: 514px){
+	#port .container .card {
+		width: 40%;
+		height: 120%;
+	}
+	/* feedback */
+	.section{
+		margin-top: 30rem;
+	}
+}
